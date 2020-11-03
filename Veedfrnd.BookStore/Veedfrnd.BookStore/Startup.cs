@@ -33,8 +33,6 @@ namespace Veedfrnd.BookStore
                 endpoints.MapGet("/", async context =>
                 {
                     await context.Response.WriteAsync("Hello World!");
-                    //Hello Prashant upload from local to github
-                    //Now this is from github to local check
                 });
             });
         }
