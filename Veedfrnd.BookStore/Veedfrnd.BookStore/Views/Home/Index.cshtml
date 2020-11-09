@@ -1,0 +1,36 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body class="container">
+    <h1>This is custom view </h1>
+    <hr />
+
+    <img src="~/images/samraddhi.jpeg" alt="logo" />
+
+    @{int a = 1; }
+
+    @{
+        switch (a)
+        {
+            case 1:<h3>i am @a</h3>
+            break;
+            case 3: <h3>i am @a</h3>
+            break;
+            case 5: <h3>i am @a</h3>
+            break;
+        }
+    }
+
+</body>
+<script src="~/lib/jquery/jquery.js"></script>
+</html>
+<script>
+    $(document).ready(function () {
+        alert("Page loaded succefully");
+    });
+</script>
