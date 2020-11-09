@@ -12,17 +12,41 @@
 
     <img src="~/images/samraddhi.jpeg" alt="logo" />
 
+    <p>this is my twitter account = @@prashant#123</p>
+    <h5>Email : prashant@gmail.com</h5>
+
     @{int a = 1; }
 
     @{
         switch (a)
         {
-            case 1:<h3>i am @a</h3>
+            case 1:<h4>i am @a</h4>
+
             break;
-            case 3: <h3>i am @a</h3>
-            break;
-            case 5: <h3>i am @a</h3>
-            break;
+        case 2:<h4>i am @a</h4>
+
+        break;
+    case 3:<h4>i am @a</h4>
+
+    break;
+}
+    }
+
+    <hr />
+    <h2 class="h2">For loop</h2>
+    @{
+        for (int i = 0; i < 5; i++)
+        {
+            <h3>@i</h3>
+        }
+    }
+    <hr />
+    <h2 class="h2">For each</h2>
+    @{ int[] intlist = { 1, 2, 3, 4, 5 };}
+    @{ 
+        foreach (var item in intlist)
+        {
+            <h5>this is foreach list item : @item</h5>
         }
     }
 
