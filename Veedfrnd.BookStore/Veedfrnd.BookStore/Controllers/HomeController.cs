@@ -11,5 +11,11 @@ namespace Veedfrnd.BookStore.Controllers
         public ViewResult index() {
             return View();
         }
+        public ViewResult ContactUs() {
+            return View();
+        }
+        public ViewResult AboutUs() {
+            return View();
+        }
     }
 }

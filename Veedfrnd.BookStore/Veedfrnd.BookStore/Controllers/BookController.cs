@@ -16,10 +16,14 @@ namespace Veedfrnd.BookStore.Controllers
         {
             _bookRepository = new BookRepository();
         }
+        /*
+                public List<BookModel> Index()
+                {
+                    return _bookRepository.getAllBooks();
+                }*/
 
-        public List<BookModel> Index()
-        {
-            return _bookRepository.getAllBooks();
+        public ViewResult Index() {
+            return View();
         }
 
         public BookModel getBook(int id) {
